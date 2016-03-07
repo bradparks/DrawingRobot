@@ -95,36 +95,36 @@ rotate([0,180,0]) translate([-17.78/2,0.000000,-4.14]) {
 		}
         for (x=xyz) translate(x) pin();
         for (x=icsp) translate(x) rotate([180,0,0]) pin();
-		translate([13.208,3.810,0])rotate([0,0,90])CAP0805_NP();  //C1 0.1uF
-		translate([6.883,30.124,0])rotate([0,0,270])TAN_A();  //C2 4.7uF
-		translate([7.087,16.434,0])rotate([0,0,270])CAP0805_NP();  //C3 0.1uF
-		translate([10.338,18.720,0])rotate([0,0,90])CAP0805_NP();  //C4 0.1uF
-		translate([8.890,3.810,0])rotate([0,0,90])CAP0805_NP();  //C7 0.1uF
-		translate([4.572,3.607,0])rotate([0,0,90])TAN_A();  //C8 4.7uF
-		translate([3.937,30.023,0])rotate([0,0,270])CAP0805_NP();  //C9 0.1uF
-		translate([7.214,27.940,0])rotate([0,0,180])SOD_123();  //D1 MBR0520
-		translate([1.270,39.370,0])rotate([0,0,270])HEAD15_NOSS();  //J1 HEAD15-NOSS
-		translate([16.510,39.370,0])rotate([0,0,270])HEAD15_NOSS_1();  //J2 HEAD15-NOSS-1
+//		translate([13.208,3.810,0])rotate([0,0,90])CAP0805_NP();  //C1 0.1uF
+//		translate([6.883,30.124,0])rotate([0,0,270])TAN_A();  //C2 4.7uF
+//		translate([7.087,16.434,0])rotate([0,0,270])CAP0805_NP();  //C3 0.1uF
+//		translate([10.338,18.720,0])rotate([0,0,90])CAP0805_NP();  //C4 0.1uF
+//		translate([8.890,3.810,0])rotate([0,0,90])CAP0805_NP();  //C7 0.1uF
+//		translate([4.572,3.607,0])rotate([0,0,90])TAN_A();  //C8 4.7uF
+//		translate([3.937,30.023,0])rotate([0,0,270])CAP0805_NP();  //C9 0.1uF
+//		translate([7.214,27.940,0])rotate([0,0,180])SOD_123();  //D1 MBR0520
+//		translate([1.270,39.370,0])rotate([0,0,270])HEAD15_NOSS();  //J1 HEAD15-NOSS
+//		translate([16.510,39.370,0])rotate([0,0,270])HEAD15_NOSS_1();  //J2 HEAD15-NOSS-1
         
 		color ([0.9,0.9,0.9,]) translate([5.2,4.2,0])rotate([0,180,180])    cube ([7.7,9.2,3.1]);  //J3 USB-MINI-B%C
         
-		translate([11.430,41.808,0])rotate([0,0,180])HEAD3X2();  //J4 HEAD3X2
-		translate([6.807,27.838,0])rotate([0,0,90])LED0805();  //LED1 RED_RX
-		translate([4.064,27.838,0])rotate([0,0,90])LED0805();  //LED2 GREEN_TX
-		translate([13.716,30.124,0])rotate([0,0,270])LED0805();  //LED3 L_AMBER
-		translate([10.287,30.124,0])rotate([0,0,270])LED0805();  //LED4 BLUE
-		translate([10.846,24.511,0])RES4NT();  //RP1 1K
-		translate([7.620,22.860,0])rotate([0,0,180])RES4NT();  //RP2 330
-		translate([7.366,24.130,0])157SW();  //SW1 RESET
-		translate([13.691,38.633,0])FIDUCIAL_1X2();  //U$4 FIDUCIAL1X2
-		translate([12.573,35.052,0])LOGO_G_117X105();  //U$36 LOGO-G%117X105
-		translate([3.835,10.262,0])FIDUCIAL_1X2();  //U$37 FIDUCIAL1X2
-		translate([13.691,38.633,0])rotate([0,0,180])FIDUCIAL_1X2();  //U$53 FIDUCIAL1X2
-		translate([2.845,2.946,0])rotate([0,0,180])FIDUCIAL_1X2();  //U$54 FIDUCIAL1X2
-		translate([8.026,20.320,0])rotate([0,0,225])QFP032();  //U1 ATMEGA328
-		translate([12.446,14.605,0])rotate([0,0,90])SSOP28();  //U2 FT232RL
-		translate([13.716,29.972,0])rotate([0,0,180])SOT223();  //U3 UA78M05
-		translate([4.826,20.828,0])rotate([0,0,45])RESONATOR();  //Y1 16MHz
+//		translate([11.430,41.808,0])rotate([0,0,180])HEAD3X2();  //J4 HEAD3X2
+//		translate([6.807,27.838,0])rotate([0,0,90])LED0805();  //LED1 RED_RX
+//		translate([4.064,27.838,0])rotate([0,0,90])LED0805();  //LED2 GREEN_TX
+//		translate([13.716,30.124,0])rotate([0,0,270])LED0805();  //LED3 L_AMBER
+//		translate([10.287,30.124,0])rotate([0,0,270])LED0805();  //LED4 BLUE
+//		translate([10.846,24.511,0])RES4NT();  //RP1 1K
+//		translate([7.620,22.860,0])rotate([0,0,180])RES4NT();  //RP2 330
+//		translate([7.366,24.130,0])157SW();  //SW1 RESET
+//		translate([13.691,38.633,0])FIDUCIAL_1X2();  //U$4 FIDUCIAL1X2
+//		translate([12.573,35.052,0])LOGO_G_117X105();  //U$36 LOGO-G%117X105
+//		translate([3.835,10.262,0])FIDUCIAL_1X2();  //U$37 FIDUCIAL1X2
+//		translate([13.691,38.633,0])rotate([0,0,180])FIDUCIAL_1X2();  //U$53 FIDUCIAL1X2
+//		translate([2.845,2.946,0])rotate([0,0,180])FIDUCIAL_1X2();  //U$54 FIDUCIAL1X2
+//		translate([8.026,20.320,0])rotate([0,0,225])QFP032();  //U1 ATMEGA328
+//		translate([12.446,14.605,0])rotate([0,0,90])SSOP28();  //U2 FT232RL
+//		translate([13.716,29.972,0])rotate([0,0,180])SOT223();  //U3 UA78M05
+//		translate([4.826,20.828,0])rotate([0,0,45])RESONATOR();  //Y1 16MHz
 	}
 }
 }

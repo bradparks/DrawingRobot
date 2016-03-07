@@ -14,7 +14,7 @@ module pin(){
     color("gray") 
     difference(){
         translate(-[space,space]/2) cube([space,space,space]);
-        for (i=mXY) mirror(i) translate([space,space]/2)cylinder(space,cut,cut,$fn=8);
+//        for (i=mXY) mirror(i) translate([space,space]/2)cylinder(space,cut,cut,$fn=8);
     }
 }
 for (x=[0:1:10], y=[-1:1:+1]) translate([x*2.54,y*2.54,0]) pin();
