@@ -1,8 +1,5 @@
 // pen holder for plotting robot
 
-
-
-
 // Diameter of pen in mm.
 penDiameter = 10.60;
 
@@ -36,8 +33,8 @@ servoScrewOffset = 2;
 servoHeightOffset = barrelHieght - 2;
 servoFwdOffset = penRadius + barrelWallThickness + baseThickness + 11;
 
-
-
+pen_servo();
+module pen_servo() {
 difference(){
 	union(){
 		penHolder();
@@ -82,9 +79,8 @@ difference(){
 		cylinder(baseThickness, penRadius, penRadius);
     
     }
-}	
-
-
+}
+}
 module roundedCube(xdim ,ydim ,zdim, rdim){
 	hull(){ // https://youtu.be/gKOkJWiTgAY
 		translate([rdim, rdim, 0]) cylinder(zdim, rdim, rdim);
@@ -281,9 +277,8 @@ module servoBracket(){
 		cylinder(baseThickness, 1.5, 1.5);     
         */
 	}
-
-
 }
+servoSG90(32);
 
 
 

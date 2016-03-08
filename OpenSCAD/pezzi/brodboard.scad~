@@ -1,0 +1,22 @@
+mx=[[1,0,0],[0,0,0]];
+x=55;
+y=85;
+z=9.7;
+01inch=2.54;
+
+a=2;
+//b=1;
+
+difference() {
+    translate([-x/2,0,0]) cube([x,y,z]);
+    union() {
+        translate([-01inch/2,0,01inch*2]) cube([01inch,y,z-01inch*2]);
+        for (i=mx) mirror(i) {
+            translate([x/2-10,0,01inch*2]) cube([0.2,y,z-01inch*2]);
+            for(a=[1:1:5], a1=[8:1:9], b=[1:1:30]) {
+                translate([a*01inch+01inch/2,b*01inch+01inch,01inch*2]) cube([1,1,z-01inch*2]);
+                translate([a1*01inch,b*01inch+01inch,01inch*2]) cube([1,1,z-01inch*2]);
+            }
+        }
+    }
+}

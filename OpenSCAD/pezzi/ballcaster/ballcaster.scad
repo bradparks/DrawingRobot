@@ -1,7 +1,7 @@
 //    https://www.pololu.com/product/955
 
 module ballcaster(hBull) rotate([180,0,0]) {
-//$fn=90;
+$fn=90;
 inch=25.4;
 r=0.438*inch;
 h=0.825*inch;
