@@ -163,7 +163,7 @@ difference() {
 }
 } // end module()
 
-rotate([180,0,0]) bracket();  // show the motor bracket
-
+rotate([0,0,0]) bracket();  // show the motor bracket
+MOT();
 //bracket();
 //StepMotor28BYJ();
