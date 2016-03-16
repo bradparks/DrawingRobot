@@ -48,9 +48,12 @@ difference(){
 		translate([0,0,h]) cylinder(h=15,d1=50,d2=12,$fn=360);
 		}
 	}
-		
+	intersection(){	
         translate([-11.1252,0,0]) rotate([0,0,60]) cylinder(h=5,r=11.1252*2,$fn=3); //triangolo punta
-      
+union() {        translate([-11.1252-6,0,0]) rotate([0,0,60]) cylinder(h=5,r=11.1252-3,$fn=360); //triangolo punta
+	translate([-11.1252-6,0,0]) rotate([0,0,-45]) cube([20,20,h]);
+}
+     } 
         translate([-0.5,-larghezzaBarre/2,0]) cube([xBoard,larghezzaBarre,h]);//barra trasversale
 //        translate([xBoard+7.8/2-21.6/2,-(yTriangolo)/2,0]) cube([21.6,yTriangolo,h]); //barra orizzontale (43 è un valora arbitrario)
         for (m=[[0,0,0],[0,1,0]]) mirror(m) translate([-larghezzaBarre*cos(30)-11.1252,0,0]) rotate([0,0,30]) cube([yTriangolo-5.6,larghezzaBarre,h]); //lati esterni -17.8
