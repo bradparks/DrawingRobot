@@ -1,6 +1,6 @@
-use <./ArduinoNano/ArduinoNano.scad>;
-use <./ArduinoNano/pin.scad>;
-use <./ArduinoNano/pinF.scad>;
+use <./ArduinoNano2/ArduinoNano.scad>;
+use <./ArduinoNano2/pin.scad>;
+use <./ArduinoNano2/pinF.scad>;
 
 module MILLEFORI(){
 	board_thickness = 1.600000;

@@ -93,8 +93,8 @@ rotate([0,180,0]) translate([-17.78/2,0.000000,-4.14]) {
 			translate([6.350,41.808,-eta])cylinder(r=0.457200, h=board_thickness+eta*2); //HEAD3X2 5
 			translate([6.350,39.268,-eta])cylinder(r=0.457200, h=board_thickness+eta*2); //HEAD3X2 6
 		}
-        for (x=xyz) translate(x) pin();
-        for (x=icsp) translate(x) rotate([180,0,0]) pin();
+        for (x=xyz) translate(x) pin(1);
+        for (x=icsp) translate(x) rotate([180,0,0]) pin(1);
 //		translate([13.208,3.810,0])rotate([0,0,90])CAP0805_NP();  //C1 0.1uF
 //		translate([6.883,30.124,0])rotate([0,0,270])TAN_A();  //C2 4.7uF
 //		translate([7.087,16.434,0])rotate([0,0,270])CAP0805_NP();  //C3 0.1uF

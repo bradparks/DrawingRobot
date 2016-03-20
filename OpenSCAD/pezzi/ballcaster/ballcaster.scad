@@ -6,7 +6,7 @@ inch=25.4;
 r=0.438*inch;
 h=0.825*inch;
 DistScrew=0.610*inch/2;
-DiaScrew=0.095*inch;
+DiaScrew=2.8;
 HScrew=8;
 sfera=0.75*inch/2;
 echo(r,h,0.75*inch);
@@ -22,7 +22,7 @@ color ("gray") {
 //    viti
     for (m=[[0,0,0],[1,0,0]] ) mirror(m){
         translate([DistScrew,0,-HScrew]) cylinder(h=HScrew,d=DiaScrew);
-        translate([DistScrew,0,-hBull]) cylinder(h=2.12,d=5.25,$fn=6);
+        translate([DistScrew,0,-hBull]) cylinder(h=2.12,d=5.4,$fn=6);
     }
 }
 }
