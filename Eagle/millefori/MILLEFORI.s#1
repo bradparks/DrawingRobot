@@ -4143,9 +4143,9 @@ Servo</text>
 <label x="22.86" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BLUETOOTH" gate="G$1" pin="4"/>
-<wire x1="180.34" y1="17.78" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
-<label x="182.88" y="17.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="BLUETOOTH" gate="G$1" pin="5"/>
+<wire x1="180.34" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
+<label x="182.88" y="15.24" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4267,9 +4267,9 @@ Servo</text>
 <label x="22.86" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BLUETOOTH" gate="G$1" pin="5"/>
-<wire x1="180.34" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
-<label x="182.88" y="15.24" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="BLUETOOTH" gate="G$1" pin="4"/>
+<wire x1="180.34" y1="17.78" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
+<label x="182.88" y="17.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="STATE" class="0">
