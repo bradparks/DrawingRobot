@@ -3918,6 +3918,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="U$8" library="MyPOW" deviceset="VIN" device=""/>
 <part name="U$12" library="MyPOW" deviceset="COM" device=""/>
 <part name="A7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="A0" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="SERVO" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="U$17" library="MyPOW" deviceset="+5V" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="PTH_LOCK"/>
@@ -3975,6 +3976,7 @@ Servo</text>
 <instance part="U$8" gate="G$1" x="147.32" y="93.98"/>
 <instance part="U$12" gate="G$1" x="165.1" y="66.04"/>
 <instance part="A7" gate="G$1" x="58.42" y="38.1"/>
+<instance part="A0" gate="G$1" x="58.42" y="27.94"/>
 <instance part="SERVO" gate="G$1" x="205.74" y="22.86" rot="MR180"/>
 <instance part="U$17" gate="G$1" x="223.52" y="33.02" rot="MR0"/>
 <instance part="S1" gate="1" x="160.02" y="81.28"/>
@@ -4182,6 +4184,11 @@ Servo</text>
 <wire x1="205.74" y1="76.2" x2="218.44" y2="76.2" width="0.1524" layer="91"/>
 <junction x="205.74" y="76.2"/>
 <label x="218.44" y="76.2" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="A0" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="27.94" x2="69.85" y2="27.94" width="0.1524" layer="91"/>
+<label x="71.12" y="27.178" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
